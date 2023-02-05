@@ -1,0 +1,112 @@
+// async uploadFileHen(file, accountId, fileType) {
+//   const directoryPath = `/home/user/FastDoctor/backend/fastdoctor-v2/files`;
+//   const files = fs.readdirSync(directoryPath);
+//   const csvFile = files.find(
+//     (folderfile) => folderfile === file.originalname,
+//   );
+//   const found = csvFile !== undefined;
+//   // const fileType = fileCategory === '保険別請求明細表' ? 1 : 0;
+//   return new Promise((resolve, reject) => {
+//     try {
+//       if (!found) {
+//         fs.writeFileSync(
+//           `/home/user/FastDoctor/backend/fastdoctor-v2/files/${file.originalname}`,
+//           file.buffer,
+//         );
+//       } else {
+//         resolve('File Exists');
+//       }
+//       resolve(file.originalname);
+//     } catch (error) {
+//       reject(error);
+//     }
+//   }).then(async (result: any) => {
+//     if (result === file.originalname) {
+//       console.log('new file');
+//       const loadedFile = new LoadedFiles();
+//       loadedFile.file_name = file.originalname;
+//       loadedFile.file_type = fileType;
+//       loadedFile.status = 2;
+//       loadedFile.account_id = accountId;
+//       loadedFile.created_at = new Date();
+//       loadedFile.file_path = '/home/user/FastDoctor/backend/fastdoctor-v2/files/';
+//       await this.loadedFilesRepository.save(loadedFile);
+//     }
+//     return result;
+//   });
+// }
+
+// async uploadFileSah(file, accountId, fileType) {
+//   const directoryPath = `/home/user/FastDoctor/backend/fastdoctor-v2/files`;
+//   const files = fs.readdirSync(directoryPath);
+//   const sehFile = files.find(
+//     (folderfile) => folderfile === file.originalname,
+//   );
+//   const found = sehFile !== undefined;
+//   return new Promise((resolve, reject) => {
+//     try {
+//       if (!found) {
+//         fs.writeFileSync(
+//           `/home/user/FastDoctor/backend/fastdoctor-v2/files/${file.originalname}`,
+//           file.buffer,
+//         );
+//       } else {
+//         resolve('File Exists');
+//       }
+//       resolve(file.originalname);
+//     } catch (error) {
+//       reject(error);
+//     }
+//   }).then(async (result: any) => {
+//     if (result === file.originalname) {
+//       console.log('new file');
+//       const loadedFile = new LoadedFiles();
+//       loadedFile.file_name = file.originalname;
+//       loadedFile.file_type = fileType;
+//       loadedFile.status = 2;
+//       loadedFile.account_id = accountId;
+//       loadedFile.created_at = new Date();
+//       loadedFile.file_path = '/home/user/FastDoctor/backend/fastdoctor-v2/files/';
+//       await this.loadedFilesRepository.save(loadedFile);
+//     }
+//     console.log('result--->', result);
+//     return result;
+//   });
+// }
+
+// async uploadFileOption5(file, accountId, fileType) {
+//   const directoryPath = `/home/user/FastDoctor/backend/fastdoctor-v2/files`;
+//   const files = fs.readdirSync(directoryPath);
+//   const sehFile = files.find(
+//     (folderfile) => folderfile === file.originalname,
+//   );
+//   const found = sehFile !== undefined;
+//   return new Promise((resolve, reject) => {
+//     try {
+//       if (!found) {
+//         fs.writeFileSync(
+//           `/home/user/FastDoctor/backend/fastdoctor-v2/files/${file.originalname}`,
+//           file.buffer,
+//         );
+//       } else {
+//         resolve('File Exists');
+//       }
+//       resolve(file.originalname);
+//     } catch (error) {
+//       reject(error);
+//     }
+//   }).then(async (result: any) => {
+//     if (result === file.originalname) {
+//       console.log('new file');
+//       const loadedFile = new LoadedFiles();
+//       loadedFile.file_name = file.originalname;
+//       loadedFile.file_type = fileType;
+//       loadedFile.status = 2;
+//       loadedFile.account_id = accountId;
+//       loadedFile.created_at = new Date();
+//       loadedFile.file_path = '/home/user/FastDoctor/backend/fastdoctor-v2/files/';
+//       await this.loadedFilesRepository.save(loadedFile);
+//     }
+//     return result;
+//   });
+// }
